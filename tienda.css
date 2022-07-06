@@ -1,0 +1,451 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    background-color: rgb(49, 54, 54);
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none; }
+li{ font-size: 1.55em; }
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px ;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165)
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blueviolet; }
+
+/* Header */
+
+header{
+    background-image: url("");
+    background-size: contain;
+    background-color: rgb(25, 27, 27);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(209, 209, 209);
+}
+
+header a:hover{
+    color:rgb(132, 0, 255);
+}
+
+/* Hero */
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(235, 233, 233);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://drive.google.com/uc?export=view&id=1qitFLZSsc5FgoZnajbfVvSNjrub3HAkF");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(235, 233, 233);
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#hero #ahora12{
+    width: 35%;
+    border-radius: 10%;
+}
+
+/* Quienes somos */
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 200px 12px;
+    color: whitesmoke;
+}
+
+#quienes-somos .container #texto{
+    background-image: url("https://drive.google.com/uc?export=view&id=1O4IoO7T2YFzt9VR4844c1ZJYRw7xMQ-D");
+}
+
+#quienes-somos li{
+
+    list-style-image: url("https://drive.google.com/uc?export=view&id=1i7CtBhhnzyd5SnXRXlWqpGle4i7iHV0i");
+    padding: 15px;
+}
+
+/* Titulo Producto */
+
+.titulo{
+    text-align: center;
+}
+
+/* Cards Producto */
+
+.product-card {
+    width: 390px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 50px auto;
+    min-width: fit-content;
+    background: #fafafa;
+    border-radius: 3%;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.badge-verde{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: rgb(0, 170, 28);
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: blueviolet;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    color: red;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: red;
+}
+
+#formulario .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+
+/* Formulario inicio */
+
+.form-register {
+    width: 100%;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid blueviolet;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: blueviolet;
+  }
+  
+  .form-register a:hover {
+    color: rgb(101, 33, 165);
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    font-weight: bold;
+    background: blueviolet;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 30px ;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  .form-register .botons:hover {
+    background-color: rgb(101, 33, 165)
+  }
+
+ #segundo{
+    display: none;
+ }
+
+/* Formulario fin */
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(25, 27, 27);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(132, 0, 255);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: whitesmoke;
+    }
+
+    #quienes-somos h2{
+        margin-top: 0px;
+
+    }
+
+    #quienes-somos .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+
+        ), url("https://drive.google.com/uc?export=view&id=1O4IoO7T2YFzt9VR4844c1ZJYRw7xMQ-D");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .product-card{
+        padding-left: 10px ;
+        padding-right: 10px;
+    }
+
+    .form-register{
+        width: 50%;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    #hero{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://www.cuadra.com.mx/blog/wp-content/uploads/2016/08/Desocupa.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+}
